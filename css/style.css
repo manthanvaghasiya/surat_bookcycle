@@ -1,0 +1,188 @@
+/* --- Global Styles & Typography --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* A light grey background */
+    color: #212529; /* A dark, readable text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+}
+.nav-logo a {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #007bff;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin-left: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.nav-links a:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+}
+.nav-links a.btn {
+    background-color: #007bff;
+    color: white;
+}
+.nav-links a.btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* --- Forms (Login, Register, List/Edit Book) --- */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+button.form-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+button.form-btn:hover {
+    background-color: #218838;
+}
+
+/* --- Homepage Book Cards --- */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+}
+.book-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.book-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.book-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.book-card h3 {
+    margin: 15px 0 5px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.book-card p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+.book-card h4 {
+    margin: 15px 0 0 0;
+    color: #007bff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+/* --- Search Bar --- */
+.search-container { margin: 40px 0; text-align: center; }
+.search-container input[type="text"] { width: 60%; padding: 14px 20px; border: 1px solid #ced4da; border-radius: 30px; font-size: 1em; }
+.search-container button { padding: 14px 25px; border: none; background-color: #007bff; color: white; border-radius: 30px; cursor: pointer; margin-left: -50px; font-weight: 600; }
+
+/* --- Utility & Messages --- */
+.message { text-align: center; padding: 12px; border-radius: 5px; margin-bottom: 20px; }
+.success { background-color: #d1e7dd; color: #0f5132; border: 1px solid #badbcc; }
+.error { background-color: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }
+.deleted { background-color: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }
