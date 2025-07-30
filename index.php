@@ -49,7 +49,7 @@ $result = $stmt->get_result();
         .search-container input[type="text"] { width: 50%; padding: 12px; border: 1px solid #ccc; border-radius: 25px; font-size: 1em; }
         .search-container button { padding: 12px 20px; border: none; background-color: #007bff; color: white; border-radius: 25px; cursor: pointer; margin-left: -90px; }
         .search-results-header { margin-top: 20px; }
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 40px; }
         .book-card-link { text-decoration: none; color: inherit; position: relative; display: block; }
         .book-card { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; text-align: center; padding: 15px; transition: box-shadow 0.3s; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
         .book-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
