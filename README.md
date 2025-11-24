@@ -1,4 +1,4 @@
-# 📚 Surat Bookcycle
+Thanks for the correction. Since you are using PHP (likely with MySQL), the setup instructions change significantly. You won't need Node.js commands; instead, you will need instructions for a server like XAMPP or WAMP.Here is the updated, professional README.md tailored for a PHP & MySQL project.Corrected README.md (PHP Version)Markdown# 📚 Surat Bookcycle
 
 ![Language](https://img.shields.io/badge/language-PHP-blue.svg)
 ![Database](https://img.shields.io/badge/database-MySQL-orange.svg)
@@ -42,10 +42,14 @@ Open your terminal/command prompt and navigate to the `htdocs` folder (usually i
 ```bash
 cd C:\xampp\htdocs
 git clone [https://github.com/manthanvaghasiya/surat_bookcycle.git](https://github.com/manthanvaghasiya/surat_bookcycle.git)
-3. Database ConfigurationOpen your browser and go to http://localhost/phpmyadmin.Create a new database named bookcycle_db (or check your connection file for the exact name).Click on Import.Choose the .sql file located in the project folder (e.g., database/bookcycle.sql) and click Go.4. Connect to DatabaseEnsure the database connection settings in your PHP code match your local setup. Check the config.php or db_connect.php file:PHP$servername = "localhost";
+
+3. Database ConfigurationOpen your browser and go to http://localhost/phpmyadmin.Create a new database named bookcycle_db (or check your connection file for the exact name).Click on Import.Choose the .sql file located in the project folder (e.g., database/bookcycle.sql) and click Go.
+
+4. Connect to DatabaseEnsure the database connection settings in your PHP code match your local setup. Check the config.php or db_connect.php file:PHP$servername = "localhost";
 $username = "root";
 $password = ""; // Default XAMPP password is empty
 $dbname = "bookcycle_db";
+
 5. Run the ProjectOpen your browser and visit:http://localhost/surat_bookcycle📸 ScreenshotsHome PageBook Details📂 Project Structuresurat_bookcycle/
 ├── assets/          # CSS, JS, and Images
 ├── config/          # Database connection files
@@ -55,4 +59,4 @@ $dbname = "bookcycle_db";
 ├── index.php        # Home page
 ├── login.php        # User login
 └── README.md        # Project documentation
-👤 AuthorManthan Vaghasiya GitHub: @[manthanvaghasiya](https://github.com/manthanvaghasiya) LinkedIn: 
+👤 Author- Manthan Vaghasiya GitHub: [@manthanvaghasiya](https://github.com/manthanvaghasiya) LinkedIn: www.linkedin.com/in/manthan-vaghasiya-b213a8267
